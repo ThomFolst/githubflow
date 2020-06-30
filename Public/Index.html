@@ -1,0 +1,94 @@
+	<!DOCTYPE html> 
+	<html> 
+	<head> 
+	    <title> Signup Form</title> 	        
+	        
+	<link rel="stylesheet"
+	href= 
+	"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
+	        
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+			
+	
+	<script type="text/javascript">
+
+		function Andereopleiding(val){
+		 
+		 if(val === "andere opleiding")
+		   document.getElementById('andereopleidingkeuze').style.display='block';
+		 else  
+		 document.getElementById('andereopleidingkeuze').style.display='none';
+		}
+		
+		</script> 
+
+
+	</head> 
+	<body> 
+    
+	    <br> 
+	    <br> 
+    <br> 
+	    <div class="container" > 
+	        <div class="row"> 
+	        <div class="col-md-3"> 
+	                    
+	        </div> 
+	                
+	        <div class="col-md-6 main"> 
+	                    
+            <form action="/registratie" method="post"> 
+	                    
+	            <h1> Signup form </h1> 
+	                            
+	            <input class="box" type="email" name="email" id="email"
+	            placeholder="E-Mail " required /><br>
+	            
+                <input class="box" type="text" name="name" id="name" placeholder="Naam" required /><br>
+                
+                <input class="box" type="text" name="lastname" id="lastname" placeholder="AchterNaam" required /><br>
+				 
+            <input class="box" type="password" name="password1"
+	            id="password1" placeholder="Wachtwoord " required/><br> 
+	                            
+	            <input class="box" type="password" name="password2"
+	            id="password2" placeholder="Herhaal wachtwoord " required/><br> 
+                        <br> 
+	           
+				
+
+				
+			<select name="vooropleiding" id="vooropleiding1"  multiple="multiple" 
+			onchange="if ($('#vooropleiding1').val() == 'andere opleiding'){$('#andere opleiding').show();
+		} else { $('#andere opleiding').hide();}" required>
+				<option>Kies een vooropleiding</option>
+				<option value="VMBO Kader">VMBO Kader</option>
+			<option value="VMBO TL">VMBO TL</option>
+				<option value="VMBO Gemengd" >VMBO Gemengd</option>
+				<option value="Overgang van HAVO 3 naar 4">Overgang van HAVO 3 naar 4</option>
+				<option value="andere opleiding">andere opleiding</option>
+				</select>
+				<br>
+				<h3>Leeg laten wanneer niet gekozen voor andere opleiding:</h3>
+				<input type='text' name='andereopleidingkeuze' id='andereopleidingkeuze' />
+
+				<input type="submit" id="submitDetails"
+				name="submitDetails" value="Submit" /><br> 
+	            </form> 
+	                    
+        </div> 
+	                
+	                
+	        <div class="col-md-3"> 
+	        </div> 
+	                
+	    </div> 
+    </div> 
+	</body> 
+	</html>  
+	                
+	        <div class="col-md-3"> 
+	        </div> 
+	                
+	    </div> 
+	    </div> 
